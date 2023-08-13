@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WeddingM</title>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <ul class="navigation">
+            <li><a href="#about" onclick="showContent('about')">關於我們</a></li>
+            <li><a href="#services" onclick="showContent('services')">服務項目</a></li>
+            <li><a href="#portfolio" onclick="showContent('portfolio')">作品瀏覽</a></li>
+            <li><a href="#packages" onclick="showContent('packages')">婚佈組合</a></li>
+            <li><a href="#contact" onclick="showContent('contact')">聯繫我們</a></li>
+        </ul>
+    </div>
+    <div class="top-bar">
+        <div class="icon-menu" onclick="toggleSidebar()">
+            <span class="menu-icon">&#9776;</span>
+        </div>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+            <div class="name">WeddingM</div>
+        </div>
+    </div>
+    <div class="content" id="about">
+        <div class="slideshow">
+            <button class="prev-button" onclick="changeSlide(-1)">&lt;</button>
+            <div class="slideshow-frame">
+                <img class="slide" src="img/slide1.jpg" alt="Slide 1">
+                <img class="slide" src="img/slide2.jpg" alt="Slide 2">
+                <img class="slide" src="img/slide3.jpg" alt="Slide 3">
+                <!-- Add more slide images as needed -->
+            </div>
+            <button class="next-button" onclick="changeSlide(1)">&gt;</button>
+        </div>
+        <div class="about-content">
+            <h2>關於我們</h2>
+            <p>這裡是關於我們的內容...</p>
+        </div>
+    </div>
+    <div class="content" id="services">
+        <h2>我們的專業</h2>
+        <div class="cards-container">
+            <div class="card">
+                <span class="card-icon">&#128142;</span>
+                <h3>婚禮佈置</h3>
+                <p>專人會場佈置</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">&#128247;</span>
+                <h3>婚禮攝影</h3>
+                <p>專業攝影團隊替您留下見證美好的一刻</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">&#9986;</span>
+                <h3>新人整體照型</h3>
+                <p>新娘秘書.彩妝給您心中最美的一面</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">&#10084;</span>
+                <h3>客製化服務</h3>
+                <p>各項目設計師專案婚禮設計</p>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="portfolio">
+        <h2>作品瀏覽</h2>
+        <p>這裡是作品瀏覽的內容...</p>
+    </div>
+    <div class="content" id="packages">
+        <h2>婚佈組合</h2>
+        <button onclick="openPackagesLink()">查看婚佈組合</button>
+    </div>
+    <div class="content" id="contact">
+        <h2>聯繫我們</h2>
+        <p>這裡是聯繫我們的內容...</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
