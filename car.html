@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>婚佈試算</title>
+    <link rel="stylesheet" href="carstyles.css">
+</head>
+<body>
+    <header>
+        <h1>婚佈試算</h1>
+    </header>
+    <div class="cart-toggle">
+        <h2 id="total-title">婚佈計畫</h2>
+        <div class="cart-summary">
+            <p id="cart-summary-text">項目總數量: 0</p>
+            <p id="cart-total">項目總計: $0.00</p>
+        </div>
+        <p id="toggle-open">+</p>
+    </div>
+    <div class="cart hidden">
+        <ul id="cart-items">
+            <!-- 这里将显示购物车中的物品 -->
+        </ul>
+        <button id="checkout-btn">结账</button>
+    </div>
+    <nav class="navbar">
+        <button id="toggle-products1">商品列表1</button>
+        <button id="toggle-products2">商品列表2</button>
+        <button id="toggle-products3">商品列表3</button>
+    </nav>
+    <div class="products">
+        <div id="product-list1" class="hidden">
+            <!-- 这里列出可供购买的产品1 -->
+        </div>
+        <div id="product-list2" class="hidden">
+            <!-- 这里列出可供购买的产品2 -->
+        </div>
+        <div id="product-list3" class="hidden">
+            <!-- 这里列出可供购买的产品3 -->
+        </div>
+    </div>
+    <script src="carscript.js"></script>
+</body>
+</html>
