@@ -44,9 +44,9 @@ function updateCart() {
                 <p>价格: $${item.price.toFixed(2)}</p>
                 <p>${item.description}</p>
             <div class="item-controls">
-                <button class="increment-btn" onclick="incrementItem(${index})">+</button>
-                <span class="item-count">${item.count}</span>
                 <button class="decrement-btn" onclick="decrementItem(${index})">-</button>
+                <span class="item-count">${item.count}</span>
+                <button class="increment-btn" onclick="incrementItem(${index})">+</button>
             </div>
         `;
         cartItems.appendChild(li);

@@ -133,6 +133,11 @@ header h1 {
     cursor: pointer;
 }
 
+#checkout-btn {
+    position: relative;
+    left: 80vw;
+}
+
 .cart button:hover {
     background-color: #555;
 }
@@ -274,5 +279,10 @@ button {
     max-width:20vw;
     max-height: 5vw;
     overflow: auto;
+    }
+
+    #checkout-btn {
+    position: relative;
+    left: 92vw;
     }
 }
